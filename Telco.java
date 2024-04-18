@@ -28,6 +28,13 @@ public class Telco implements TelcoSubsription{
     public void setPromoPrice(double promoPrice) {
         this.promoPrice = promoPrice;
     }
+     public void setDateAllowance(integer setdateAllowance) {
+        this.dateAllowance = dateAllowance;
+    }
+
+    public void setUnliCallText(double unliCallText) {
+        this.unliCallText = unliCallText;
+    }
 
     public String getTelecoName() {
         return telcoName;
@@ -35,6 +42,15 @@ public class Telco implements TelcoSubsription{
 
     public double getPromoPrice() {
         return promoPrice;
+    }
+   
+
+    public String getDateAllowance() {
+        return dateAllowance;
+    }
+
+    public double getUnliCallText() {
+        return unliCallText;
     }
    
 }
