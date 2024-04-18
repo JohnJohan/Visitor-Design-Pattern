@@ -11,7 +11,7 @@ public class UnliCallTextPackage implements UnliCallsTextOffer{
 
     @Override
     public String showUnliCallsTextOffers(String telcoName, double money) {
-        double insuranceValue = insuranceMap.getOrDefault(bankName, 0.0);
+        double insuranceValue = insuranceMap.getOrDefault(telcoName, 0.0);
 
         if (insuranceValue == 0.0) {
             // Handle the case where insurance value is zero (e.g., GoTyme)
