@@ -4,9 +4,9 @@ public class BankInsurance implements Insurance{
     private static Map<String, Double> insuranceMap = new HashMap<>();
 
     static {
-        insuranceMap.put("Smart", 250000.0);
-        insuranceMap.put("Globe", 1000000.0);
-        insuranceMap.put("Ditto", 0.0);
+        insuranceMap.put("Smart", 15.0);
+        insuranceMap.put("Globe", 10.0);
+        insuranceMap.put("Ditto", 8.0);
     }
 
     @Override
