@@ -4,9 +4,9 @@ public class BankInsurance implements Insurance{
     private static Map<String, Double> insuranceMap = new HashMap<>();
 
     static {
-        insuranceMap.put("Smart", 15.0);
-        insuranceMap.put("Globe", 10.0);
-        insuranceMap.put("Ditto", 8.0);
+        insuranceMap.put("Cimb", 250000.0);
+        insuranceMap.put("SeaBank", 1000000.0);
+        insuranceMap.put("GoTyme", 0.0);
     }
 
     @Override
@@ -17,7 +17,7 @@ public class BankInsurance implements Insurance{
             // Handle the case where insurance value is zero (e.g., GoTyme)
             return 0.0;
         }
-   
+    
          
         if (money >= 50000.0) {
             return money * (money / insuranceValue);
