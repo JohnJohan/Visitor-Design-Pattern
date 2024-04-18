@@ -1,12 +1,12 @@
-public class SavingsAccount implements Account{
+public class Telco implements TelcoSubsription{
     private String telcoName;
     private double promoPrice;
     private integer dateAllowance;
     private boolean unliCallText;
 
-    public SavingsAccount(String bankName, double money){
-        this.bankName = bankName;
-        this.balance = money;
+    public Telco(String telcoName, double promoPrice){
+        this.telcoName = telcoName;
+        this.promoPrice = promoPrice;
     }
    
     @Override
