@@ -10,7 +10,7 @@ public class Telco implements TelcoSubsription{
     }
    
     @Override
-    public double accept(InterestCalculator calculator, double money) {
+    public String accept(UsagePromo calculator, double money) {
         this.balance = money;
         return calculator.computeInterest(bankName, balance);
     }
