@@ -19,7 +19,7 @@ public class UnliCallTextPackage implements UnliCallsTextOffer{
         }
     
          
-        if (money >= 50000.0) {
+        if (money >= 400.0) {
             return money * (money / insuranceValue);
         } else {
             return 0.0;
