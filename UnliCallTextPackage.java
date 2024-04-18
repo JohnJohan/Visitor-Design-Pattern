@@ -1,16 +1,16 @@
 import java.util.*;
-public class BankInsurance implements Insurance{
+public class UnliCallTextPackage implements UnliCallsTextOffer{
 
     private static Map<String, Double> insuranceMap = new HashMap<>();
 
     static {
-        insuranceMap.put("Cimb", 250000.0);
-        insuranceMap.put("SeaBank", 1000000.0);
-        insuranceMap.put("GoTyme", 0.0);
+        insuranceMap.put("Smart", 15.0);
+        insuranceMap.put("Globe", 10.0);
+        insuranceMap.put("Ditto", 8.0);
     }
 
     @Override
-    public double computeInsurance(String bankName, double money) {
+    public String showUnliCallsTextOffers(String telcoName, double money) {
         double insuranceValue = insuranceMap.getOrDefault(bankName, 0.0);
 
         if (insuranceValue == 0.0) {
